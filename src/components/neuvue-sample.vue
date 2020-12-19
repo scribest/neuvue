@@ -1,4 +1,5 @@
 <script lang="ts">
+import '@/assets/index.css';
 import { defineComponent } from 'vue';
 
 interface SampleData {
@@ -54,16 +55,16 @@ export default defineComponent({
 <template>
   <div class="neuvue-sample">
     <p>The counter was {{ changedBy }} to <b>{{ counter }}</b>.</p>
-    <button @click="increment">
+    <button @click="increment" class="bg-green-500">
       Click +1
     </button>
-    <button @click="decrement">
+    <button @click="decrement" class="bg-green-500">
       Click -1
     </button>
-    <button @click="increment(5)">
+    <button @click="increment(5)" class="bg-green-500">
       Click +5
     </button>
-    <button @click="decrement(5)">
+    <button @click="decrement(5)" class="bg-green-500">
       Click -5
     </button>
     <button @click="reset">
@@ -81,7 +82,7 @@ export default defineComponent({
     background: #eaeaea
     text-align: center
     padding: 25px
-    
+
   .neuvue-sample p
     margin: 0 0 1em
 </style>
