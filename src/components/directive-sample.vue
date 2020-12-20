@@ -5,22 +5,13 @@
 <script lang="ts">
 import { VNode } from 'vue';
 import { Vue, Options } from 'vue-class-component';
-import { NVDirectives, classDecorator } from '@/directives';
-import { ClassWithDirectives } from '@/interfaces';
+import { Directives } from '@/directives';
 
-@NVDirectives(['neu'])
+@Directives({ neu: 'neu_alias' })
 @Options({})
-export default class DirectiveSample extends Vue implements ClassWithDirectives {
+export default class DirectiveSample extends Vue {
   mounted() {
-    console.log(this.$data);
+    console.log(this);
   }
-
-  directives = {
-    andrew: {
-      mounted(el: VNode) {
-        console.log('lolo');
-      },
-    },
-  };
 }
 </script>
