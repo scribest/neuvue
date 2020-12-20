@@ -1,7 +1,7 @@
 {
   "name": "@scribest/neuvue",
   "description": "Vue component library implementing a Neumorphic design.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "licence": "MIT",
   "repository": {
     "type": "git",

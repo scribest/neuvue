@@ -1,17 +1,23 @@
 <template>
-  <NeuvueSample/>
+  <directive-sample/>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import NeuvueSample from './components/neuvue-sample.vue';
+import DirectiveSample from './components/directive-sample.vue';
 
 @Options({
   components: {
     NeuvueSample,
+    DirectiveSample,
+  },
+  mounted() {
+    console.log('welcome to vue 3');
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+}
 </script>
 
 <style lang="scss">
